@@ -1,0 +1,37 @@
+/* Style */
+body {
+  background-color: black;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: plum;
+}
+
+.soldOut {
+  opacity: 0.5;
+}
+
+/* Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+article {
+  padding: 10%;
+}
