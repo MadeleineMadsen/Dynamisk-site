@@ -25,9 +25,14 @@ a {
 /* Layout */
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+article {
+  padding: 10%;
+}
+
+/* Udsolgt knap */
 .soldOut {
   opacity: 0.5;
 }
@@ -41,12 +46,4 @@ main {
   color: white;
 }
 
-/* Layout */
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
-article {
-  padding: 10%;
-}
