@@ -22,10 +22,30 @@ a {
   color: plum;
 }
 
+<<<<<<< HEAD
 /* Layout */
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+=======
+.soldOut {
+  opacity: 0.5;
+}
+
+.soldOut::before {
+  content: "SOLD OUT";
+  position: absolute;
+  padding: 5px;
+  border: solid black;
+  background-color: black;
+  color: white;
+}
+
+/* Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+>>>>>>> origin/produkt
 }
 
 article {

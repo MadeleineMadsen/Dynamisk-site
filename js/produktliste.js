@@ -19,6 +19,9 @@ function showProduct(product) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("soldOut");
   }
+  copy
+    .querySelector(".read-more")
+    .setAttribute("href", `produkt.html?id=${product.id}`);
   //Appende
   document.querySelector("main").appendChild(copy);
 }
