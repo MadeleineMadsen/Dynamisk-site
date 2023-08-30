@@ -1,35 +1,198 @@
-/* Style */
+/* Generel style til alle sider */
 body {
-  background-color: black;
+  background-color: white;
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 img {
   max-width: 100%;
+  border: 2px solid black;
 }
 
 h1,
 h2,
 h3 {
-  color: white;
+  font-family: Jose;
+  color: black;
 }
 
 p {
+  font-family: Jose;
+  color: black;
+}
+
+/* Fonte */
+@font-face {
+  font-family: Sport;
+  src: url(font/Clean\ Sports\ Stencil.ttf);
+}
+
+@font-face {
+  font-family: Jose;
+  src: url(font/JosefinSans-VariableFont_wght.ttf);
+}
+
+/* Style af navigationsbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: Sport;
   color: white;
 }
 
-a {
-  color: plum;
+.mainNav h1 span {
+  display: inline-block;
+  transform: scaleX(-1);
+  color: rgb(144, 218, 255);
 }
 
+nav a {
+  font-size: 18px;
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+nav a:hover {
+  color: rgb(144, 218, 255);
+}
+
+a {
+  font-family: Jose;
+  color: rgb(144, 218, 255);
+}
+
+a:hover {
+  color: black;
+}
+
+/*---------------- Produkt ----------------*/
+/* Layout & style*/
+.main-produkt {
+  font-family: Jose;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.img-produkt {
+  grid-column: 1 / 2;
+}
+
+.section-produkt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* PurchaseBox del */
+.purchaseBox {
+  background-color: rgba(144, 218, 255, 0.306);
+  font-family: Jose;
+  border: 1px solid black;
+  padding: 10px;
+
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+/* Info del */
+.info {
+  font-family: Jose;
+  padding: 10px;
+
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+dd {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+dt {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Øverste del */
+.breadcrumbs {
+  list-style-type: none;
+  display: flex;
+  margin-left: -50px;
+}
+
+.produkt-tekst {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.breadcrumbs li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/*---------------- Kategori ----------------*/
 /* Layout */
-main {
+.main-kategori {
+  margin-left: -39px;
+}
+
+/* Style */
+.brandList ol {
+  list-style-type: none;
+  column-count: 2;
+}
+.brandList li {
+  display: flex;
+  border: 1px solid black;
+  background-color: rgb(144, 218, 255);
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+.brandList a {
+  display: block;
+  font-size: 18px;
+  color: black;
+  width: 100%;
+}
+
+.brandList a:hover {
+  color: white;
+}
+
+/*---------------- Produktliste ----------------*/
+/* Layout & style */
+.main-produktliste {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 article {
-  padding: 10%;
+  padding: 30px;
 }
 
 /* Udsolgt knap */
@@ -45,5 +208,3 @@ article {
   background-color: black;
   color: white;
 }
-
-
