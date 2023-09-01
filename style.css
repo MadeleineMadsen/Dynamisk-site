@@ -195,6 +195,11 @@ article {
   padding: 30px;
 }
 
+/* On sale */
+.sale {
+  color: red;
+}
+
 /* Udsolgt knap */
 .soldOut {
   opacity: 0.5;
